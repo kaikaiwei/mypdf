@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85E4A1719ECBC5500781680 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E4A1619ECBC5500781680 /* libstdc++.6.0.9.dylib */; };
 		F8D0451419EBABA600D25E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0451319EBABA600D25E53 /* main.m */; };
 		F8D0451719EBABA600D25E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0451619EBABA600D25E53 /* AppDelegate.m */; };
 		F8D0451A19EBABA600D25E53 /* mypdf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8D0451819EBABA600D25E53 /* mypdf.xcdatamodeld */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F85E4A1619ECBC5500781680 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		F8D0450E19EBABA600D25E53 /* mypdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mypdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0451219EBABA600D25E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D0451319EBABA600D25E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85E4A1719ECBC5500781680 /* libstdc++.6.0.9.dylib in Frameworks */,
 				F8D0453E19EBAC0F00D25E53 /* CoreData.framework in Frameworks */,
 				F8D0453C19EBAC0900D25E53 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -148,6 +151,7 @@
 		F8D0453A19EBABB000D25E53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F85E4A1619ECBC5500781680 /* libstdc++.6.0.9.dylib */,
 				F8D0453D19EBAC0F00D25E53 /* CoreData.framework */,
 				F8D0453B19EBAC0900D25E53 /* CoreGraphics.framework */,
 			);
@@ -416,6 +420,7 @@
 				INFOPLIST_FILE = mypdf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -426,6 +431,7 @@
 				INFOPLIST_FILE = mypdf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

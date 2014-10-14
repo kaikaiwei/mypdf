@@ -53,6 +53,15 @@
 //#define PODOFO_EXTRA_CHECKS
 #endif //PODOFO_EXTRA_CHECKS
 
+//引入一些常用的文件
+#include <stddef.h>
+#include <iosfwd>
+
+
+namespace PoDoFo {
+    //一个机器相关的量，用来表示两个指针之间的差距，可以是负数。size_t指明数组的长度，是一个正数。
+    typedef ptrdiff_t pdf_long;
+};
 
 
 namespace PoDoFo {

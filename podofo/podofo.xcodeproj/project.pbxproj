@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85E4A1219ECBB9D00781680 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E4A1119ECBB9D00781680 /* libstdc++.6.0.9.dylib */; };
 		F8D0457119EBB48F00D25E53 /* ATest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0456F19EBB48F00D25E53 /* ATest.cpp */; };
 		F8D0457819EBC78600D25E53 /* PdfDataType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0457619EBC78600D25E53 /* PdfDataType.cpp */; };
 		F8D0457C19EBD6AD00D25E53 /* PdfError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0457A19EBD6AD00D25E53 /* PdfError.cpp */; };
@@ -26,10 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F85E4A1119ECBB9D00781680 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		F8D0454819EBAC9000D25E53 /* libpodofo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpodofo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0455319EBAC9000D25E53 /* podofoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = podofoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0455619EBAC9000D25E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8D0456819EBADAE00D25E53 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		F8D0456919EBADCF00D25E53 /* PDFDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFDefines.h; sourceTree = "<group>"; };
 		F8D0456A19EBAF9900D25E53 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F8D0456E19EBB3D500D25E53 /* Podofo_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Podofo_config.h; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85E4A1219ECBB9D00781680 /* libstdc++.6.0.9.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,12 +63,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F85E4A1319ECBBB500781680 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F85E4A1119ECBB9D00781680 /* libstdc++.6.0.9.dylib */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		F85E4A1819ECC5E800781680 /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encrypt;
+			sourceTree = "<group>";
+		};
 		F8D0453F19EBAC9000D25E53 = {
 			isa = PBXGroup;
 			children = (
 				F8D0454A19EBAC9000D25E53 /* podofo */,
 				F8D0455419EBAC9000D25E53 /* podofoTests */,
 				F8D0454919EBAC9000D25E53 /* Products */,
+				F85E4A1319ECBBB500781680 /* libs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +103,6 @@
 				F8D0456D19EBB3AE00D25E53 /* header */,
 				F8D0456C19EBAFB500D25E53 /* doc */,
 				F8D0456B19EBAFAE00D25E53 /* base */,
-				F8D0456819EBADAE00D25E53 /* MyPlayground.playground */,
 				F8D0456A19EBAF9900D25E53 /* PrefixHeader.pch */,
 				F8D0456F19EBB48F00D25E53 /* ATest.cpp */,
 				F8D0457019EBB48F00D25E53 /* ATest.h */,
@@ -112,6 +129,7 @@
 		F8D0456B19EBAFAE00D25E53 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				F85E4A1819ECC5E800781680 /* encrypt */,
 				F8D0457919EBD66200D25E53 /* error */,
 				F8D0457519EBC76F00D25E53 /* datatype */,
 			);
@@ -399,6 +417,7 @@
 				F8D0455B19EBAC9000D25E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D0455C19EBAC9000D25E53 /* Build configuration list for PBXNativeTarget "podofoTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +426,7 @@
 				F8D0455E19EBAC9000D25E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

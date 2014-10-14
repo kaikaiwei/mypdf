@@ -9,7 +9,7 @@
 #ifndef podofo_PrefixHeader_pch
 #define podofo_PrefixHeader_pch
 
-
+//#include <iosfwd>
 
 
 #endif
