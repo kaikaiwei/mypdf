@@ -15,6 +15,8 @@
 		F8D0452219EBABA600D25E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D0452119EBABA600D25E53 /* Images.xcassets */; };
 		F8D0452519EBABA600D25E53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D0452319EBABA600D25E53 /* LaunchScreen.xib */; };
 		F8D0453119EBABA600D25E53 /* mypdfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0453019EBABA600D25E53 /* mypdfTests.m */; };
+		F8D0453C19EBAC0900D25E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D0453B19EBAC0900D25E53 /* CoreGraphics.framework */; };
+		F8D0453E19EBAC0F00D25E53 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D0453D19EBAC0F00D25E53 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F8D0450D19EBABA600D25E53;
 			remoteInfo = mypdf;
+		};
+		F8D0456419EBAC9100D25E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D0455F19EBAC9000D25E53 /* podofo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8D0454819EBAC9000D25E53;
+			remoteInfo = podofo;
+		};
+		F8D0456619EBAC9100D25E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D0455F19EBAC9000D25E53 /* podofo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8D0455319EBAC9000D25E53;
+			remoteInfo = podofoTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,6 +58,9 @@
 		F8D0452A19EBABA600D25E53 /* mypdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mypdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0452F19EBABA600D25E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D0453019EBABA600D25E53 /* mypdfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mypdfTests.m; sourceTree = "<group>"; };
+		F8D0453B19EBAC0900D25E53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8D0453D19EBAC0F00D25E53 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F8D0455F19EBAC9000D25E53 /* podofo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = podofo.xcodeproj; path = podofo/podofo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D0453E19EBAC0F00D25E53 /* CoreData.framework in Frameworks */,
+				F8D0453C19EBAC0900D25E53 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +86,10 @@
 		F8D0450519EBABA600D25E53 = {
 			isa = PBXGroup;
 			children = (
+				F8D0455F19EBAC9000D25E53 /* podofo.xcodeproj */,
 				F8D0451019EBABA600D25E53 /* mypdf */,
 				F8D0452D19EBABA600D25E53 /* mypdfTests */,
+				F8D0453A19EBABB000D25E53 /* Frameworks */,
 				F8D0450F19EBABA600D25E53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +143,24 @@
 				F8D0452F19EBABA600D25E53 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8D0453A19EBABB000D25E53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8D0453D19EBAC0F00D25E53 /* CoreData.framework */,
+				F8D0453B19EBAC0900D25E53 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8D0456019EBAC9000D25E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D0456519EBAC9100D25E53 /* libpodofo.a */,
+				F8D0456719EBAC9100D25E53 /* podofoTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +230,12 @@
 			mainGroup = F8D0450519EBABA600D25E53;
 			productRefGroup = F8D0450F19EBABA600D25E53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F8D0456019EBAC9000D25E53 /* Products */;
+					ProjectRef = F8D0455F19EBAC9000D25E53 /* podofo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F8D0450D19EBABA600D25E53 /* mypdf */,
@@ -196,6 +243,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F8D0456519EBAC9100D25E53 /* libpodofo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpodofo.a;
+			remoteRef = F8D0456419EBAC9100D25E53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F8D0456719EBAC9100D25E53 /* podofoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = podofoTests.xctest;
+			remoteRef = F8D0456619EBAC9100D25E53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F8D0450C19EBABA600D25E53 /* Resources */ = {
@@ -418,6 +482,7 @@
 				F8D0453619EBABA600D25E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D0453719EBABA600D25E53 /* Build configuration list for PBXNativeTarget "mypdfTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +491,7 @@
 				F8D0453919EBABA600D25E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
