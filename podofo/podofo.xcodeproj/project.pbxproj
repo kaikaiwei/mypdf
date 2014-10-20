@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F85E4A1219ECBB9D00781680 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E4A1119ECBB9D00781680 /* libstdc++.6.0.9.dylib */; };
+		F88BA88F19F4AB9100EF56DB /* PdfDestination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F88BA88D19F4AB9100EF56DB /* PdfDestination.cpp */; };
+		F88BA89219F4AC2A00EF56DB /* PdfElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F88BA89019F4AC2A00EF56DB /* PdfElement.cpp */; };
+		F88BA89519F4AC6000EF56DB /* PdfEncoding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F88BA89319F4AC6000EF56DB /* PdfEncoding.cpp */; };
+		F88BA89819F4C00500EF56DB /* PdfName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F88BA89619F4C00500EF56DB /* PdfName.cpp */; };
 		F8D0457119EBB48F00D25E53 /* ATest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0456F19EBB48F00D25E53 /* ATest.cpp */; };
 		F8D0457819EBC78600D25E53 /* PdfDataType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0457619EBC78600D25E53 /* PdfDataType.cpp */; };
 		F8D0457C19EBD6AD00D25E53 /* PdfError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D0457A19EBD6AD00D25E53 /* PdfError.cpp */; };
@@ -28,6 +32,14 @@
 
 /* Begin PBXFileReference section */
 		F85E4A1119ECBB9D00781680 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		F88BA88D19F4AB9100EF56DB /* PdfDestination.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PdfDestination.cpp; sourceTree = "<group>"; };
+		F88BA88E19F4AB9100EF56DB /* PdfDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfDestination.h; sourceTree = "<group>"; };
+		F88BA89019F4AC2A00EF56DB /* PdfElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PdfElement.cpp; sourceTree = "<group>"; };
+		F88BA89119F4AC2A00EF56DB /* PdfElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfElement.h; sourceTree = "<group>"; };
+		F88BA89319F4AC6000EF56DB /* PdfEncoding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PdfEncoding.cpp; sourceTree = "<group>"; };
+		F88BA89419F4AC6000EF56DB /* PdfEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfEncoding.h; sourceTree = "<group>"; };
+		F88BA89619F4C00500EF56DB /* PdfName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PdfName.cpp; sourceTree = "<group>"; };
+		F88BA89719F4C00500EF56DB /* PdfName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfName.h; sourceTree = "<group>"; };
 		F8D0454819EBAC9000D25E53 /* libpodofo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpodofo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0455319EBAC9000D25E53 /* podofoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = podofoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D0455619EBAC9000D25E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +144,10 @@
 				F85E4A1819ECC5E800781680 /* encrypt */,
 				F8D0457919EBD66200D25E53 /* error */,
 				F8D0457519EBC76F00D25E53 /* datatype */,
+				F88BA89319F4AC6000EF56DB /* PdfEncoding.cpp */,
+				F88BA89419F4AC6000EF56DB /* PdfEncoding.h */,
+				F88BA89619F4C00500EF56DB /* PdfName.cpp */,
+				F88BA89719F4C00500EF56DB /* PdfName.h */,
 			);
 			name = base;
 			sourceTree = "<group>";
@@ -139,6 +155,10 @@
 		F8D0456C19EBAFB500D25E53 /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				F88BA88D19F4AB9100EF56DB /* PdfDestination.cpp */,
+				F88BA88E19F4AB9100EF56DB /* PdfDestination.h */,
+				F88BA89019F4AC2A00EF56DB /* PdfElement.cpp */,
+				F88BA89119F4AC2A00EF56DB /* PdfElement.h */,
 			);
 			name = doc;
 			sourceTree = "<group>";
@@ -261,8 +281,12 @@
 			files = (
 				F8D0457819EBC78600D25E53 /* PdfDataType.cpp in Sources */,
 				F8D0457C19EBD6AD00D25E53 /* PdfError.cpp in Sources */,
+				F88BA89519F4AC6000EF56DB /* PdfEncoding.cpp in Sources */,
+				F88BA88F19F4AB9100EF56DB /* PdfDestination.cpp in Sources */,
+				F88BA89219F4AC2A00EF56DB /* PdfElement.cpp in Sources */,
 				F8D0457119EBB48F00D25E53 /* ATest.cpp in Sources */,
 				F8D0457F19EBD9FE00D25E53 /* PdfString.cpp in Sources */,
+				F88BA89819F4C00500EF56DB /* PdfName.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

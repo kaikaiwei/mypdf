@@ -11,6 +11,7 @@
 
 //#include <stdio.h>
 #include <cstdio>
+#include <iostream>
 #include "PdfDataType.h"
 #include "PDFDefines.h"
 
@@ -147,7 +148,7 @@ namespace PoDoFo {
          *  \see IsUnicode
          *  \see Length
          */
-        inline char* GetString() const;
+        inline const char* GetString() const;
         
         /**
          *  字符串的内容可以通过本方法读取
@@ -158,7 +159,7 @@ namespace PoDoFo {
          *  \see IsUnicode
          *  \see Length
          */
-        inline pdf_utf16be* GetUnicode() const;
+        inline const pdf_utf16be* GetUnicode() const;
         
         /**
          *  字符串的内容用utf8编码方式读取
@@ -330,11 +331,70 @@ namespace PoDoFo {
         bool m_bHex;
         bool m_bUnicode;
         
-        std::string m_sUtf8;
-        const PdfEncoding* m_pEncoding;
+        std::string m_sUtf8;    //utf8格式的bending缓存
+        const PdfEncoding* m_pEncoding;  //非utf8格式的编码方式什么的
+        
         
     };
     
+    bool PdfString::IsValid() const
+    {
+#warning 使用注释中得内容
+//        return (m_buffer.GetBuffer() != NULL);
+        return false;
+    }
+    bool PdfString::IsHex() const
+    {
+        return m_bHex;
+    }
+    bool PdfString::IsUnicode() const
+    {
+        return m_bUnicode;
+    }
+    
+    const char* PdfString::GetString() const
+    {
+        return "sss";
+#warning 使用注释中的内容
+//        return m_buffer.GetBuffer();
+    }
+    
+    const pdf_utf16be* PdfString::GetUnicode() const
+    {
+#warning 使用注释中得内容
+        return NULL;
+//        return reinterpret_cast<pdf_utf16be>(m_buffer.GetBuffer());
+    }
+    
+    const std::string & PdfString::GetStringUtf8() const
+    {
+#warning 去掉注释
+//        if (this->IsValid() && !m_sUtf8.length() && m_buffer.GetSize()-	2) {
+//            const_cast<PdfString*>((this)->InitUtf8());
+//        }
+        return m_sUtf8;
+    }
+    
+    pdf_long PdfString::GetLength() const
+    {
+//        return m_buffer.GetSize -2;
+        return 0;
+    }
+    
+    pdf_long PdfString::GetCharacterLength() const
+    {
+        return this->IsUnicode() ? this-> GetUnicodeLength() : this->GetLength();
+    }
+    
+    pdf_long PdfString::GetUnicodeLength() const
+    {
+        return 0;
+//        return (m_buffer.GetSize() / sizeof(pdf_utf16be)) -1;
+    }
+    
 }
+
+
+
 
 #endif /* defined(__podofo__PdfString__) */
